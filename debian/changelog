@@ -1,3 +1,13 @@
+pyasn1 (0.4.8-1ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: memory exhaustion from malformed RELATIVE-OID
+    - debian/patches/CVE-2026-23490.patch: add limit of 20 continuation
+      octets per OID arc in pyasn1/codec/ber/decoder.py,
+      tests/codec/ber/test_decoder.py.
+    - CVE-2026-23490
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 20 Jan 2026 12:25:32 -0500
+
 pyasn1 (0.4.8-1) unstable; urgency=medium
 
   [ Debian Janitor ]

@@ -1,3 +1,13 @@
+pyasn1 (0.4.8-1ubuntu0.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: DoS via uncontrolled recursion
+    - debian/patches/CVE-2026-30922.patch: limit nesting depth in
+      pyasn1/codec/ber/decoder.py, tests/codec/ber/test_decoder.py,
+      tests/codec/cer/test_decoder.py, tests/codec/der/test_decoder.py.
+    - CVE-2026-30922
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 23 Mar 2026 13:49:20 -0400
+
 pyasn1 (0.4.8-1ubuntu0.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: memory exhaustion from malformed RELATIVE-OID
